@@ -1,5 +1,6 @@
 #!/bin/bash
 
+pwd
 export GOOGLE_APPLICATION_CREDENTIALS="~/keys/appKey.json"
 
 # Change to Terraform directory
