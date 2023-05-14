@@ -1,17 +1,17 @@
 resource "google_sql_database_instance" "default" {
-  name             = "sql-server"
-  database_version = "MYSQL_5_7"
+  name             = var.sql_server_name
+  database_version = var.database_version
   region           = var.region
 
   settings {
-    tier = "db-n1-standard-1"
+    tier = var.tier
   }
 
   deletion_protection = false
 }
 
 resource "google_sql_database" "default" {
-  name     = "example-db"
+  name     = var.db_name
   instance = google_sql_database_instance.default.name
 }
 
