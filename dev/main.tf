@@ -48,6 +48,8 @@ module "appserver" {
   startup_script = ""
   zone = ""
   network_name = "vpc-network"
+  subnet_name = "test-subnetwork"
+  subnet_ip_cidr_range = "10.2.0.0/16"
 }
 
 
