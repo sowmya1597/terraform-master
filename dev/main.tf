@@ -30,6 +30,14 @@ module "webserver" {
   region       = lookup(local.webserver_config, "region")
   version_id   = lookup(local.webserver_config, "version_id")
   service_name = lookup(local.webserver_config, "service_name")
+  runtime = ""
+  cool_down_period = ""
+  cpu_utilization = {}
+  deployment_artifact_url = ""
+  env_variables = {}
+  max_instances = 0
+  min_instances = 0
+  min_pending_latency = ""
 }
 
 /*module "app_server" {

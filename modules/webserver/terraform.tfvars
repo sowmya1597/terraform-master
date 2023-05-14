@@ -6,9 +6,8 @@ min_instances              = 2
 min_pending_latency        = "30ms"
 
 env_variables = {
-  "SPRING_PROFILES_ACTIVE" = "prod"
+  "SPRING_PROFILES_ACTIVE" = "dev"
   "PORT"                   = "8080"
-  "JAVA_OPTS"              = "-Dspring.profiles.active=prod -Xmx512m"
 }
 
 cpu_utilization = {
