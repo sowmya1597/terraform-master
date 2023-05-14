@@ -2,7 +2,7 @@
 
 # Change to Terraform directory
 
-#cd terraform
+cd dev
 
 # Initialize Terraform
 terraform init
