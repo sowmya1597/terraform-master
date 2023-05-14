@@ -40,13 +40,17 @@ module "webserver" {
   min_pending_latency     = ""
 }
 
-/*module "appserver" {
-  source = "./modules/appserver"
+module "appserver" {
+  source = "../modules/appserver"
   project_id = var.project_id
   region = var.region
-  instance_type = var.app_server_instance_type
+  image = ""
+  instance_name = ""
+  machine_type = ""
+  startup_script = ""
+  zone = ""
 }
-*/
+
 
 module "sqlserver" {
   source           = "../modules/sqlserver"
@@ -56,6 +60,12 @@ module "sqlserver" {
   tier             = "db-n1-standard-1"
   db_name          = "usecase1_db"
 }
+
+
+
+
+
+
 
 
 
