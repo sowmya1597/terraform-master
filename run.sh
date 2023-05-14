@@ -5,8 +5,8 @@
 cd dev
 
 # Initialize Terraform
-terraform init
-terraform validate
+
+terraform init -reconfigure
 # Plan infrastructure changes
 echo "Executing terraform plan"
 terraform plan -lock=false
