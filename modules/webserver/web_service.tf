@@ -6,9 +6,18 @@ resource "google_app_engine_standard_app_version" "default" {
   env_variables = var.env_variables
 
   entrypoint {
-    shell = ""
+    shell = "java -jar ../myapp.jar"
   }
-
+  app_yaml {
+    handlers = [
+      {
+        url_regex = ".*"
+        script {
+      script_path = "myapp.jar"
+      }
+      }
+    ]
+  }
   deployment {
     zip {
       source_url = var.deployment_artifact_url

@@ -8,7 +8,10 @@ min_pending_latency        = "30ms"
 env_variables = {
   "SPRING_PROFILES_ACTIVE" = "dev"
   "PORT"                   = "8080"
-}
+  "DATABASE_URL"           = "jdbc:thin//user:password@localhost/db"
+} 
+
+
 
 cpu_utilization = {
   target_utilization = 0.5
