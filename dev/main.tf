@@ -42,7 +42,6 @@ module "webserver" {
 
 module "appserver" {
   source = "../modules/appserver"
-   region = var.region
   image = ""
   instance_name = ""
   machine_type = ""
