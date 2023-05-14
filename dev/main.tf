@@ -41,7 +41,7 @@ module "webserver" {
 }
 
 /*module "appserver" {
-  source = "./modules/app_server"
+  source = "./modules/appserver"
   project_id = var.project_id
   region = var.region
   instance_type = var.app_server_instance_type
@@ -49,7 +49,7 @@ module "webserver" {
 */
 
 module "sqlserver" {
-  source = "../modules/sql_server"
+  source = "../modules/sqlserver"
   region = var.region
 }
 
