@@ -5,6 +5,8 @@ export GOOGLE_APPLICATION_CREDENTIALS="~/keys/appKey.json"
 
 # Change to Terraform directory
 cd dev
+echo "print path..."
+pwd
 
 # Initialize Terraform
 terraform init
