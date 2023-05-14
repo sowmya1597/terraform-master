@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # Change to Terraform directory
-cd terraform
+
+#cd terraform
 
 # Initialize Terraform
 terraform init
