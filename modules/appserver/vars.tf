@@ -29,5 +29,5 @@ variable "subnet_ip_cidr_range" {
   default = ""
 }
 variable "network_name" {
-  default = ""
+  default = "vpc1"
 }
