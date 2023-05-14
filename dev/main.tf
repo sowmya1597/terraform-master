@@ -1,3 +1,11 @@
+terraform {
+  required_providers {
+    google = {
+      source = "hashicorp/google"
+      version = "4.64.0"
+    }
+  }
+}
 provider "google" {
   project = lookup(local.webserver_config, "project_id")
   region  = lookup(local.webserver_config, "region")
