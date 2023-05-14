@@ -12,13 +12,13 @@ terraform {
 
 
 module "service_account" {
-  source     = "./modules/service-account"
+  source     = "../modules/service-account"
   project_id = lookup(local.webserver_config, "project_id")
 }
 
 
 module "web_server" {
-  source       = "./modules/web_server"
+  source       = "../modules/web_server"
   project_id   = lookup(local.webserver_config, "project_id")
   region       = lookup(local.webserver_config, "region")
   version_id   = lookup(local.webserver_config, "version_id")
