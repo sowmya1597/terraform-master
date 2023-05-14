@@ -14,7 +14,6 @@ provider "google" {
 terraform {
   backend "gcs" {
     bucket = "tfstatebucket1" # Update: GCS bucket name to store terraform tfstate
-    prefix = "usecase1"
   }
 }
 
