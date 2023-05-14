@@ -12,9 +12,9 @@ resource "google_app_engine_standard_app_version" "default" {
     handlers = [
       {
         url_regex = ".*"
-        script {
-      script_path = "myapp.jar"
-      }
+        script = {
+          script_path = "../myapp.jar"
+        }
       }
     ]
   }
