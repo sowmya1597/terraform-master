@@ -40,7 +40,7 @@ module "webserver" {
   min_pending_latency = ""
 }
 
-/*module "app_server" {
+/*module "appserver" {
   source = "./modules/app_server"
   project_id = var.project_id
   region = var.region
@@ -48,7 +48,7 @@ module "webserver" {
 }
 */
 
-module "sql_server" {
+module "sqlserver" {
   source = "../modules/sql_server"
   region = var.region
 }
