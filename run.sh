@@ -1,7 +1,7 @@
 #!/bin/bash
 
 pwd
-export GOOGLE_APPLICATION_CREDENTIALS="~/keys/appKey.json"
+export GOOGLE_APPLICATION_CREDENTIALS="/var/lib/jenkins/workspace/install-webserver2/keys/appKey.json"
 
 # Change to Terraform directory
 cd dev
