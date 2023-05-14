@@ -8,7 +8,7 @@ resource "google_app_engine_standard_app_version" "default" {
   entrypoint {
     shell = "java -jar ../myapp.jar"
   }
-  
+
   deployment {
     zip {
       source_url = var.deployment_artifact_url
