@@ -47,6 +47,7 @@ module "appserver" {
   machine_type = ""
   startup_script = ""
   zone = ""
+  network_name =""
 }
 
 
