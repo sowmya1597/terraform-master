@@ -1,11 +1,12 @@
 #!/bin/bash
 
-# Change to Terraform directory
+export GOOGLE_APPLICATION_CREDENTIALS="~/keys/appKey.json"
 
+# Change to Terraform directory
 cd dev
 
 # Initialize Terraform
-terraform init -migrate-state
+terraform init
 
 # Plan infrastructure changes
 echo "Executing terraform plan"
