@@ -5,8 +5,8 @@
 cd dev
 
 # Initialize Terraform
+terraform init -migrate-state
 
-terraform init -reconfigure
 # Plan infrastructure changes
 echo "Executing terraform plan"
 terraform plan -lock=false
