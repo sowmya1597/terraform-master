@@ -9,3 +9,8 @@ resource "google_project_iam_member" "storage" {
   role    = "roles/storage.admin"
   member  = "serviceAccount:${google_service_account.storage.email}"
 }
+resource "google_storage_bucket" "bucket" {
+  name          = "usecase1-bucket"
+  location      = "us-central1"
+  force_destroy = true
+}
